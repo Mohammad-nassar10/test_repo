@@ -1,12 +1,8 @@
-For PDF files that need to be submitted to Instructlab:
+# Instructlab taxonomy extension
 
-- Split the PDF files into chunks and convert each section into Markdown (MD) format.
-- Create a new GitHub repository or use an existing one to store these Markdown files.
-- Push the Markdown files to the chosen GitHub repository.
-- Note the commit hash ID of this push.
-- In the Instructlab taxonomy repository, create or update qna.yaml file.
-- In the qna.yaml file, add an entry that includes:
-    - The GitHub repository URL where you pushed the Markdown files
-    - The commit hash ID from a previous step
-    - Any additional metadata required by Instructlab
+To extend instrutlab taxonomy knowledge user should do the following steps:
+- Clone a pre-created github repository (will be used to store Markdown files).
+- Convert given PDF files into Markdown (MD) format and store them in the directory of the cloned git repository.
+- Push the Markdown files into the git repository.
+- Use the last commit hash id to create a qna.yaml file according to the following url https://raw.githubusercontent.com/instructlab/taxonomy/refs/heads/main/docs/template_qna.yaml
 - Commit and push the updated qna.yaml file to the Instructlab taxonomy repository.
